@@ -1,0 +1,9 @@
+    {%extends "layout.html"%}
+    {%block content%}
+        {%for post in posts%}
+                
+            <h1>BY {{post.author}}</h1>
+                
+            <p><b>Series Name :{{post.title}}<br> Published On {{post.date_published}}</p>
+        {%endfor%}
+    {% endblock content%}
