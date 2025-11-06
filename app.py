@@ -17,7 +17,9 @@ def home():
 def about():
     return render_template('about.html',title="About")
 
-
+@app.route("/bitch")
+def bitch():
+    return "hello bitch"
 
 if __name__ == "__main__":
     app.run(debug=True)
